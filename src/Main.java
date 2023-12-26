@@ -71,6 +71,25 @@ public class Main {
             }
         }
 
+        System.out.println("   ");
+        System.out.println("Задача 7");//Выведите в консоль напоминание об отчете за каждую пятницу месяца
+        int numberFriday = 3;
+        do {
+            System.out.println("Сегодня пятница, " + numberFriday + " число. Необходимо подготовить отчет");
+            numberFriday=numberFriday+7;
+        }
+        while (numberFriday<31);
+
+        System.out.println("   ");
+        System.out.println("Задача 8");//Выведите в консоль годы появления кометы за заданный период
+        int year=2023;
+        int starYears = year-200;
+        int stopYear = year+100;
+        for (i=0; i<stopYear; i++) {
+            if (i%79==0 && i>starYears) {
+                System.out.println(i);
+            }
+        }
 
 
 
