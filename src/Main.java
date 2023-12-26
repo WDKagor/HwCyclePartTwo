@@ -61,8 +61,15 @@ public class Main {
         }
 
         System.out.println("   ");
-        System.out.println("Задача 6");//Выведите в консоль сумму накоплений за каждый 6-ой месяц
+        System.out.println("Задача 6");//Выведите в консоль сумму накоплений за каждые полгода в течении 9 лет
+        deposit = 15000;
+        for (i=1; i>0; i++) {
+            deposit=deposit+deposit/ 100 * 7;
+            if (i<=54 && i%6==0) {
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
 
+            }
+        }
 
 
 
