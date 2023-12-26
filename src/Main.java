@@ -15,7 +15,32 @@ public class Main {
         }
 
         System.out.println("   ");
-        System.out.println("Задача 2");//Напишите программу, которая выводит в консоль заданную последовательность чисел
+        System.out.println("Задача 2");//Выведите последовательность чисел с помощью while и for
+        i = 0;
+        while (i<=10) {
+            System.out.print(i++ + " ");
+        }
+        System.out.println(" ");
+        for (i=10; i>=0; i--) {
+            System.out.print(i + " ");
+        }
+
+        System.out.println("   ");
+        System.out.println("   ");
+        System.out.println("Задача 3");//Выведите в консоль численность населения страна через 10 лет
+        int population = 12_000_000;
+        i=0;
+        while (i<10) {
+            i++;
+            population=population+population/1000*(17-8);
+            continue;
+            }
+        System.out.print("Год " + i + " численность населения составляет " + population);
+
+        System.out.println("   ");
+        System.out.println("   ");
+        System.out.println("Задача 4");//Выведите в консоль сумму накоплений за каждый месяц
+
 
 
 
