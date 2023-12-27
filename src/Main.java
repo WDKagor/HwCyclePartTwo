@@ -41,7 +41,9 @@ public class Main {
         System.out.println("   ");
         System.out.println("Задача 4");//Выведите в консоль сумму накоплений за каждый месяц
         deposit = 15000;
-        for (i=1; i>0; i++) {
+        i=0;
+        while (i>=0) {
+            i++;
             if (deposit<12_000_000) {
                 deposit=deposit+deposit/ 100 * 7;
                 System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
@@ -51,7 +53,9 @@ public class Main {
         System.out.println("   ");
         System.out.println("Задача 5");//Выведите в консоль сумму накоплений за каждый 6-ой месяц
         deposit = 15000;
-        for (i=1; i>0; i++) {
+        i=1;
+        while (i>0) {
+            i++;
             if (deposit<12_000_000) {
                 deposit=deposit+deposit/ 100 * 7;
                 if (i%6==0) {
@@ -63,7 +67,9 @@ public class Main {
         System.out.println("   ");
         System.out.println("Задача 6");//Выведите в консоль сумму накоплений за каждые полгода в течении 9 лет
         deposit = 15000;
-        for (i=1; i>0; i++) {
+        i=1;
+        while (i>0) {
+            i++;
             deposit=deposit+deposit/ 100 * 7;
             if (i<=54 && i%6==0) {
             System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
